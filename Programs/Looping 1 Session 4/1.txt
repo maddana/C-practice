@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+int n,i,m;
+scanf("%d", &n);
+i=1;
+while(n>=i)
+{
+	m=i*i;
+    i++;
+    printf("%d ",m);
+}
+return 0;
+}

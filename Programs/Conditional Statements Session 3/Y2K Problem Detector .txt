@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+  int x,y;
+  printf("Enter Year of Birth\n");
+  scanf("%d",&x);
+  printf("Enter Current year\n");
+  scanf("%d",&y);
+  if(y-x>0)
+    printf("Your age is %d",(y-x));
+  else
+    printf("Your age is %d",(y-x+100));
+  return 0;
+}

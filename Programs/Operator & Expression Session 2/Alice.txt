@@ -1,0 +1,166 @@
+#include<stdio.h>
+int main()
+{
+  int n=0;
+  printf("The bird said:\n");
+  scanf("%d",&n);
+  int sum=0;
+  sum=n%10;
+  n=n/10;
+  sum=sum+n%10;
+  printf("Alice must go in path-%d to find her way to home",sum);
+  return 0;
+}
+
+2.
+#include<stdio.h>
+int main()
+{
+  float s1,s2,s3,s4,s5,s6;
+  printf("Enter sale in first month\n");
+  scanf("%f",&s1);
+  printf("Enter sale in second month\n");
+  scanf("%f",&s2);
+  printf("Enter sale in third month\n");
+  scanf("%f",&s3);
+  printf("Enter sale in fourth month\n");
+  scanf("%f",&s4);
+  printf("Enter sale in fifth month\n");
+  scanf("%f",&s5);
+  printf("Enter the average sales in 6 months\n");
+  scanf("%f",&s6);
+  printf("The sale in the sixth month is Rs.%.2f",(6*s6)-s1-s2-s3-s4-s5);
+  return 0;
+}
+
+3.
+#include<stdio.h>
+int main()
+{
+  int l=0,b=0;
+  printf("Enter the length of the ground\n");
+  scanf("%d",&l);
+  printf("Enter the width of the ground\n");
+  scanf("%d",&b);
+  printf("The length of the rope needed is %dm\n",2*(l+b));
+  printf("The quantity of carpet needed is %dsqm",l*b);
+  return 0;
+}
+
+4.
+#include<stdio.h>
+int main()
+{
+  float x1,x2,x3,y1,y2,y3;
+  printf("Enter x1\n");
+  scanf("%f",&x1);
+  printf("Enter y1\n");
+  scanf("%f",&y1);
+  printf("Enter x2\n");
+  scanf("%f",&x2);
+  printf("Enter y2\n");
+  scanf("%f",&y2);
+  printf("Enter x3\n");
+  scanf("%f",&x3);
+  printf("Enter y3\n");
+  scanf("%f",&y3);
+  printf("Dinesh's house is located at (%.1f , %.1f)",(x1+x2+x3)/3,(y1+y2+y3)/3);
+  return 0;
+}
+
+5.
+#include<stdio.h>
+int main()
+{
+  int m=0,c=0;
+  printf("Enter the value of m\n");
+  scanf("%d",&m);
+  printf("Enter the value of c\n");
+  scanf("%d",&c);
+  printf("The line equation is y=%dx+%d\nThe x intercept is %d\nThe y intercept is %d\nThe house number is %d",m,c,-(c/m),c,c-(c/m));
+  return 0;
+}
+
+6.
+#include<stdio.h>
+int main()
+{
+  int x=0,y=0,z=0;
+  printf("Enter the x-coordinate of the left bottom vertex\n");
+  scanf("%d",&x);
+  printf("Enter the y-coordinate of the left bottom vertex\n");
+  scanf("%d",&y);
+  printf("Enter the length of a side\n");
+  scanf("%d",&z);
+  printf("The centre of the ground is at (%d,%d)",x+z/2,y+z/2);
+  return 0;
+}
+
+7.
+#include<stdio.h>
+int main()
+{
+  int a,b,c;
+  printf("Enter the number of copies sold\n");
+  scanf("%d",&a);
+  printf("Enter the cost of 1 copy of the newspaper\n");
+  scanf("%d",&b);
+  printf("Enter the cost spent by the agency on 1 copy of the newspaper\n");
+  scanf("%d",&c);
+  printf("The profit obtained is Rs.%d",((b-c)*a)-100);
+  return 0;
+}
+
+8.
+#include<stdio.h>
+int main()
+{
+  int a=0,b=0;
+  printf("Enter the number of students in the class\n");
+  scanf("%d",&a);
+  printf("Enter the number of teams\n");
+  scanf("%d",&b);
+  printf("The number of students in each team is %d and the number of students left out is %d",a/b,a%b);
+  return 0;
+}
+
+9.
+#include<stdio.h>
+int main()
+{
+  float x1=0,y1=0,x2=0,y2=0;
+  printf("Enter x1\n");
+  scanf("%f",&x1);
+  printf("Enter y1\n");
+  scanf("%f",&y1);
+  printf("Enter x2\n");
+  scanf("%f",&x2);
+  printf("Enter y2\n");
+  scanf("%f",&y2);
+  printf("Binoy's house is located at (%.1f , %.1f)",(x1+x2)/2,(y1+y2)/2);
+  return 0;
+}
+
+10.
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+  int xa=0,xb=0,xc=0,ya=0,yb=0,yc=0;
+  printf("Enter the x-coordinate of vertex A\n");
+  scanf("%d",&xa);
+  printf("Enter the y-coordinate of vertex A\n");
+  scanf("%d",&ya);
+  printf("Enter the x-coordinate of vertex B\n");
+  scanf("%d",&xb);
+  printf("Enter the y-coordinate of vertex B\n");
+  scanf("%d",&yb);
+  printf("Enter the x-coordinate of vertex C\n");
+  scanf("%d",&xc);
+  printf("Enter the y-coordinate of vertex C\n");
+  scanf("%d",&yc);
+  printf("Length of side AB is %.1f\n",sqrt(((xa-xb)*(xa-xb))+((ya-yb)*(ya-yb))));
+  printf("Length of side BC is %.1f\n",sqrt(((xb-xc)*(xb-xc))+((yb-yc)*(yb-yc))));
+  printf("Length of side AC is %.1f\n",sqrt(((xa-xc)*(xa-xc))+((ya-yc)*(ya-yc))));
+  return 0;
+}

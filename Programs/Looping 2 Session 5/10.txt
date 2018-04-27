@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+  int a,b,i;
+  printf("Enter the value of a\n");
+  scanf("%d",&a);
+  printf("Enter the value of b\n");
+  scanf("%d",&b);
+  i=a;
+  if(a>b)
+  {
+    while(i>=b)
+  {
+    printf("%d\n",i);
+    i--;
+  }
+  }
+  else
+  {
+    while(i<=b)
+  {
+    printf("%d\n",i);
+    i++;
+  }
+  }
+  return 0;
+}

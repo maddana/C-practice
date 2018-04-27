@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+  int a,a1,b,b1;
+  char c;
+  scanf("%c %d %d %d %d",&c,&a,&a1,&b,&b1);
+  a=(a*a1)+(b*b1);
+  printf("The fee to be paid is Rs.");
+  char x=c;
+  switch(x)
+  {
+    case 'A':printf("%d",a);break;
+    case 'B':printf("%d",a+5000);break;
+    case 'C':printf("%d",a+1500);break;
+    case 'D':printf("%d",a+6500);break;
+  }
+  return 0;
+}

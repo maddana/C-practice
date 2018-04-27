@@ -1,0 +1,69 @@
+#include<stdio.h>
+
+	int main()
+
+	{
+
+		printf(“Hello World!\n”);
+
+		return 0;
+
+	}
+2.
+#include<stdio.h>
+
+	int main()
+
+	{
+
+		printf(“Hello Aliens ! Welcome to our planet Earth.\n”);
+
+		return 0;
+
+	}
+
+3.
+#include<stdio.h>
+int main()
+{
+char name[25], creatorname[20], purpose[22];
+int memoryspace;
+float speed;
+printf("Enter the Name :\n");
+scanf("%s", name);
+printf("Enter the Creator Name :\n");
+scanf("%s", creatorname);
+printf("Enter the Purpose :\n");
+scanf("%s", purpose);
+printf("Memory Space :\n");
+scanf("%d", &memoryspace);
+printf("Speed :\n");
+scanf("%f", &speed);
+printf("My Details :\n");
+printf("I am the Robot named %s.\n", name);
+printf("I was created by %s.\n", creatorname);
+printf("I am created for the purpose of %s.\n", purpose);
+printf("My memory space is around %dGb and my speed is %.1fTb.\n", memoryspace, speed);
+return 0;
+}
+
+4.
+#include<stdio.h>
+int main()
+{
+int dead, injured, safe;
+printf("Enter the number of people dead:\n");
+scanf("%d", &dead);
+printf("Enter the number of people injured:\n");
+scanf("%d", &injured);
+printf("Enter the number of people safe:\n");
+scanf("%d", &safe);
+printf("TSUNAMI REPORT OF JAPAN\n");
+printf("The number of people\n");
+printf("1)Dead:%d\n", dead);
+printf("2)Injured:%d\n", injured);
+printf("3)Safe:%d\n", safe);
+printf("Please help the people who are suffering!!!\n");
+return 0;
+}
+

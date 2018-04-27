@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+  int a,b;
+  char c;
+  scanf("%d %c",&a,&c);
+  switch(c)
+  {
+    case '+':scanf("%d",&b);printf("The sum is %d",a+b);break;
+    case '-':scanf("%d",&b);printf("The difference is %d",a-b);break;
+    case '*':scanf("%d",&b);printf("The product is %d",a*b);break;
+    case '/':scanf("%d",&b);printf("The quotient is %d",a/b);break;
+    case '%':scanf("%d",&b);printf("The remainder is %d",a%b);break;
+    default:printf("Invalid Input");break;
+  }
+  return 0;
+}
